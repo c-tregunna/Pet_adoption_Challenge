@@ -1,0 +1,53 @@
+nav {
+    width: 90%;
+    @include flex($dir: column, $just: center, $align: center);
+    margin: auto;
+    border-bottom: 1px solid lighten($black, 70%);
+    box-shadow: 0px 1px darken($white, 10%);
+    text-align: center;
+    @include medq($break-m) {
+        @include flex($dir: row);
+    }
+    @include medqL($break-l) {
+        border-bottom: none;
+        box-shadow: none;
+        justify-content: flex-end;
+    }
+    & ul li {
+     font-size: 1.75em;
+     margin: 10px;
+     padding: 10px;
+     @include medq($break-m) {
+         font-size: 1em;
+     }
+    }
+}
+
+.mainNav {
+    display: none;
+    @include medq($break-m) {
+        display: block;
+        @include flex($dir: row);
+    }
+}
+
+ nav ul li:last-child a {
+    border-radius: 40px;
+    background-color: $color-secondary;
+    color: $white;
+}
+
+#menuIcon {
+    font-size: 2em;
+    @include medq($break-m) {
+        display: none;
+    }
+}
+
+#menuClose {
+    font-size: 2em;
+    display: none;
+    @include medq($break-m) {
+        display: none;
+    }
+}
