@@ -19,3 +19,22 @@ header {
 .logoWrap span {
     font-size: 2em;
 }
+
+#about {
+    width: 95%;
+    margin: 20px auto;
+    padding: 0px 20px;
+    border-bottom: 1px solid lighten($black, 70%);
+    box-shadow: 0px 1px darken($white, 10%);
+    @include flex($dir: column, $align: center);
+    @include medq($break-m) {
+        @include flex($dir: row, $align: center, $just: space-around);
+    }
+}
+
+.intro {
+    padding: 10px;
+    @include medq($break-m) {
+        width: 100%;
+    }
+}

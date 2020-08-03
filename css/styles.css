@@ -423,7 +423,6 @@ body {
   background-color: #f8f8f8;
   width: 80%;
   margin: auto;
-  height: 100vh;
   max-width: 1000px;
 }
 
@@ -433,6 +432,19 @@ body {
 
 .logo {
   margin-right: 10px;
+}
+
+.mainImage {
+  width: 95%;
+  margin: 10px auto;
+}
+.mainImage svg {
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .mainImage svg {
+    width: 80%;
+  }
 }
 
 a {
@@ -475,6 +487,12 @@ nav ul li {
     font-size: 1em;
   }
 }
+@media (min-width: 1024px) {
+  nav ul li {
+    padding: 10px 0px;
+    margin: 10px 0px;
+  }
+}
 
 .mainNav {
   display: none;
@@ -491,6 +509,16 @@ nav ul li:last-child a {
   border-radius: 40px;
   background-color: #ff99ad;
   color: #FFF;
+}
+@media (min-width: 768px) {
+  nav ul li:last-child a {
+    padding: 4px 30px;
+  }
+}
+@media (min-width: 1024px) {
+  nav ul li:last-child a {
+    margin: 0 0 0 50px;
+  }
 }
 
 #menuIcon {
@@ -541,6 +569,34 @@ header {
 
 .logoWrap span {
   font-size: 2em;
+}
+
+#about {
+  width: 95%;
+  margin: 20px auto;
+  padding: 0px 20px;
+  border-bottom: 1px solid #b3b3b3;
+  box-shadow: 0px 1px #e6e6e6;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media (min-width: 768px) {
+  #about {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+}
+
+.intro {
+  padding: 10px;
+}
+@media (min-width: 768px) {
+  .intro {
+    width: 100%;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

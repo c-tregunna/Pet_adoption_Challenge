@@ -1,5 +1,15 @@
 
-
 .logo {
     margin-right: 10px;
+}
+
+.mainImage {
+    width: 95%;
+    margin: 10px auto;
+    & svg {
+        width: 100%;
+        @include medq($break-m) {
+            width: 80%;
+        }
+    }
 }
