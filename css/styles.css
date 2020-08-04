@@ -430,6 +430,11 @@ body {
   display: none;
 }
 
+h2 {
+  width: 95%;
+  text-align: center;
+}
+
 .logo {
   margin-right: 10px;
 }
@@ -447,10 +452,19 @@ body {
   }
 }
 
+.dogNo {
+  display: none;
+}
+@media (min-width: 768px) {
+  .dogNo {
+    display: block;
+  }
+}
+
 a {
   color: #333c44;
   text-decoration: none;
-  padding: 10px 30px;
+  padding: 10px;
 }
 
 nav {
@@ -512,7 +526,7 @@ nav ul li:last-child a {
 }
 @media (min-width: 768px) {
   nav ul li:last-child a {
-    padding: 4px 30px;
+    padding: 4px 20px;
   }
 }
 @media (min-width: 1024px) {
@@ -571,20 +585,24 @@ header {
   font-size: 2em;
 }
 
-#about {
+#about,
+#adopt {
   width: 95%;
   margin: 20px auto;
   padding: 0px 20px;
   border-bottom: 1px solid #b3b3b3;
   box-shadow: 0px 1px #e6e6e6;
+}
+
+#about {
   display: flex;
-  flex-direction: column;
+  flex-direction: column-reverse;
   align-items: center;
 }
 @media (min-width: 768px) {
   #about {
     display: flex;
-    flex-direction: row;
+    flex-direction: row-reverse;
     justify-content: space-around;
     align-items: center;
   }
@@ -597,6 +615,23 @@ header {
   .intro {
     width: 100%;
   }
+}
+
+.dogImgs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media (min-width: 768px) {
+  .dogImgs {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+}
+.dogImgs svg {
+  margin: 20px 0px;
 }
 
 /*# sourceMappingURL=styles.css.map */

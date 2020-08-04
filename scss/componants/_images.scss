@@ -13,3 +13,10 @@
         }
     }
 }
+
+.dogNo {
+    display: none;
+    @include medq($break-m) {
+        display: block;
+    }
+}
