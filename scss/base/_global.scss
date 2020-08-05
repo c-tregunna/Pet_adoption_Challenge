@@ -1,17 +1,19 @@
 * {
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 body {
     font-size: 1em;
     color: $font;
     font-family: $main-font;
+
 }
 
 .wrapper {
     background-color: $bg;
     width: 80%;
     margin: auto;
-    max-width: 1000px;
+    max-width: 1024px;
 }
 
 .hidden {

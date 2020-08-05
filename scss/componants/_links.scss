@@ -4,3 +4,21 @@ a {
     padding: 10px;
 }
 
+.buttons {
+    @include flex( $dir: column, $align: center);
+    @include medq($break-m) {
+        @include flex( $dir: row, $just: center);
+    }
+}
+.buttons a {
+    display: block;
+    padding: 10px;
+    margin: 10px;
+    background-color: $color-secondary;
+    border-radius: 4px;
+    @include medq($break-m) {
+        padding: 10px 20px;
+        margin: 10px 10%;
+    }
+}
+

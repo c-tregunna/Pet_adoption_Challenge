@@ -39,9 +39,7 @@ nav {
     border-radius: 40px;
     background-color: $color-secondary;
     color: $white;
-    @include medq($break-m) {
-        padding: 4px 20px;
-    }
+    padding: 4px 20px;
     @include medqL($break-l) {
         margin: 0 0 0 50px;
     }
