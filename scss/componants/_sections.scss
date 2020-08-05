@@ -22,12 +22,18 @@ header {
 
 #about,
 #adopt,
-#locations {
+#locations,
+#contact {
     width: 95%;
     margin: 20px auto;
     padding: 20px;
     border-bottom: 1px solid lighten($black, 70%);
     box-shadow: 0px 1px darken($white, 10%);
+}
+
+#contact {
+    border-bottom: none;
+    box-shadow: none;
 }
 
 #about {
@@ -38,7 +44,6 @@ header {
 }
 
 #locations {
-
     @include flex($dir: column, $align: center);
 }
 

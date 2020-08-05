@@ -463,8 +463,34 @@ h2 {
 }
 
 .map {
-  width: 90%;
-  margin-top: -30px;
+  width: 100%;
+  height: 100%;
+}
+
+.topCat {
+  position: absolute;
+  left: -60px;
+  top: -80px;
+  z-index: -100;
+  display: none;
+}
+@media (min-width: 768px) {
+  .topCat {
+    display: block;
+  }
+}
+
+.bottomCat {
+  position: absolute;
+  left: 82%;
+  top: 300px;
+  z-index: 100;
+  display: none;
+}
+@media (min-width: 768px) {
+  .bottomCat {
+    display: block;
+  }
 }
 
 a {
@@ -616,12 +642,18 @@ header {
 
 #about,
 #adopt,
-#locations {
+#locations,
+#contact {
   width: 95%;
   margin: 20px auto;
   padding: 20px;
   border-bottom: 1px solid #b3b3b3;
   box-shadow: 0px 1px #e6e6e6;
+}
+
+#contact {
+  border-bottom: none;
+  box-shadow: none;
 }
 
 #about {
@@ -668,6 +700,61 @@ header {
 }
 .dogImgs svg {
   margin: 20px 0px;
+}
+
+input,
+textarea {
+  border-radius: 4px;
+  box-shadow: 0px 2px 2px #b3b3b3;
+  margin: 10px 0 20px 0;
+  width: 100%;
+  max-width: 500px;
+  padding: 12px;
+  font-size: 0.75em;
+}
+input.location,
+textarea.location {
+  border: 1px solid #ffccd6;
+  background-image: url("../images/icons/locationmarker.png");
+  background-repeat: no-repeat;
+  background-position: 98% 7px;
+  background-size: 18px;
+}
+input.form,
+textarea.form {
+  border: 1px solid #acacac;
+}
+
+.locationLabel {
+  text-align: center;
+}
+
+form {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media (min-width: 768px) {
+  form {
+    width: 70%;
+  }
+}
+
+fieldset {
+  z-index: 100000;
+  position: relative;
+  border: none;
+}
+
+button {
+  background: #ff99ad;
+  border: none;
+  color: #FFF;
+  border-radius: 4px;
+  padding: 4px 30px;
+  font-size: 0.8em;
 }
 
 /*# sourceMappingURL=styles.css.map */

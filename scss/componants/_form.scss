@@ -1,0 +1,48 @@
+input,
+textarea{
+    border-radius: 4px;
+    box-shadow: 0px 2px 2px lighten($black, 70%);
+    margin: 10px 0 20px 0;
+    width: 100%;
+    max-width: 500px;
+    padding: 12px;
+    font-size: .75em;
+    &.location {
+        border: 1px solid lighten($color-secondary, 10%);
+        background-image: url('../images/icons/locationmarker.png');
+        background-repeat: no-repeat;
+        background-position: 98% 7px;
+        background-size: 18px;
+    }
+    &.form {
+        border: 1px solid darken($bg, 30%);
+    }
+}
+
+.locationLabel {
+    text-align: center;
+}
+
+form {
+    width: 100%;
+    margin: auto;
+    @include flex($dir: column, $align: center);
+    @include medq($break-m) {
+        width: 70%;
+    }
+}
+
+fieldset {
+    z-index: 100000;
+    position: relative;
+    border: none;
+}
+
+button {
+    background: $color-secondary;
+    border: none;
+    color: $white;
+    border-radius: 4px;
+    padding: 4px 30px;
+    font-size: .8em;
+}
