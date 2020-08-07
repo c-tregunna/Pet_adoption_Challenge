@@ -567,9 +567,6 @@ nav ul li {
   }
 }
 
-.mainNav {
-  display: none;
-}
 @media (min-width: 768px) {
   .mainNav {
     display: block;

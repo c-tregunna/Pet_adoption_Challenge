@@ -28,7 +28,6 @@ nav {
 }
 
 .mainNav {
-    display: none;
     @include medq($break-m) {
         display: block;
         @include flex($dir: row);
